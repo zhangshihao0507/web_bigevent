@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>art_cate</title>
+  <!-- 导入layui样式表 -->
+  <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+  <!-- 导入文章类别页面的样式表 -->
+  <link rel="stylesheet" href="/assets/css/article/art_cate.css">
+</head>
+
+<body>
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>文章类别管理</span>
+      <button id="btn-addCate" type="button" class="layui-btn layui-btn-normal layui-btn-sm">添加类别</button>
+    </div>
+    <div class="layui-card-body">
+      <!-- 表格区域 -->
+      <table class="layui-table">
+        <!-- colgroup用来设置各个列的宽度 -->
+        <colgroup>
+          <col>
+          <col>
+          <col width="200">
+        </colgroup>
+        <!-- 表头 -->
+        <thead>
+          <tr>
+            <th>分类名称</th>
+            <th>分类别名</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <!-- 内容 -->
+        <tbody id="art_list">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 导入layui的js文件 -->
+  <script src="/assets/lib/layui/layui.all.js"></script>
+  <!-- 导入jQuery -->
+  <script src="/assets/lib/jquery.js"></script>
+  <!-- 导入自己封装的baseAPI -->
+  <script src="/assets/js/baseAPI.js"></script>
+  <!-- 导入文章类别页面的js文件 -->
+  <script src="/assets/js/art_cate.js"></script>
+</body>
+
+</html>
